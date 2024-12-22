@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Astrophotos</title>
+        <!-- Favicon -->
+        <link
+          rel="icon"
+          href="https://avatars.githubusercontent.com/u/62744954?v=4"
+          type="image/x-icon"
+        />
+        <!-- Font Awesome icons -->
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        />
+        <!-- Core theme CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+      </head>
+<body>
+    <header>
+        <h1>Astrophotos</h1>
+        <nav>
+            <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="photo-item">
+                <img src="pictures/CaliNebula.jpg" alt="California Nebula / NGC 1499" onclick="openLightbox('pictures/CaliNebula.jpg')">
+                <p><div class="photoHeader"> <a href=https://de.wikipedia.org/wiki/NGC_1499>California Nebula / NGC 1499</a> </div> <div class="description">The California Nebula (Also known NGC 1499 or Sh2-220) is an emission nebula located in the constellation Perseus. Its name comes from its resemblance to the outline of the US State of California in long exposure photographs. It is almost 2.5° long on the sky and, because of its very low surface brightness, it is extremely difficult to observe visually. It can be observed with a Hα filter (isolates the Hα line at 656 nm) or Hβ filter (isolates the Hβ line at 486 nm) in a rich-field telescope under dark skies. It lies at a distance of about 1,000 light years from Earth. Its fluorescence is due to excitation of the Hβ line in the nebula by the nearby prodigiously energetic O7 star, Xi Persei (also known as Menkib).</div></p>
+            </div>
+            <div class="photo-item">
+                <img src="pictures/IrisNebula.jpg" alt="Iris Nebula / NGC 7023" onclick="openLightbox('pictures/IrisNebula.jpg')">
+                <p><div class="photoHeader"><a href=https://en.wikipedia.org/wiki/Iris_Nebula>Iris Nebula / NGC 7023</a></div> <div class="description">The Iris Nebula (also known as NGC 7023 and Caldwell 4) is a bright reflection nebula in the constellation Cepheus. The designation NGC 7023 refers to the open cluster within the larger reflection nebula designated LBN 487. The nebula, which shines at magnitude +6.8, is illuminated by a magnitude +7.4 star designated HD 200775. It is located near the Mira-type variable star T Cephei, and near the bright magnitude +3.23 variable star Beta Cephei (Alfirk). It lies 1,300 light-years away and is six light-years across.</div></p>
+            </div>
+            <div class="photo-item">
+                <img src="pictures/IC 405.jpg" alt="Flaming Star and Tadpole Nebulae / IC 405, IC 410" onclick="openLightbox('pictures/IC 405.jpg')">
+                <p><div class="photoHeader"><a href=https://en.wikipedia.org/wiki/IC_405>Flaming Star</a> and <a href=https://en.wikipedia.org/wiki/NGC_1893>Tadpole</a> Nebulae / <a href=Flaming Star>IC 405</a>, <a href=https://en.wikipedia.org/wiki/NGC_1893>IC 410</a></div>
+                    <div class="description">IC 405 (also known as the Flaming Star Nebula, SH 2-229, or Caldwell 31) is an emission and reflection nebula in the constellation Auriga north of the celestial equator, surrounding the bluish, irregular variable star AE Aurigae. It shines at magnitude +6.0. It is located near the emission nebula IC 410, the open clusters M38 and M36, and the K-class star Iota Aurigae. </div></p>
+            </div>
+            <div class="photo-item">
+                <img src="pictures/NGC7822.jpg" alt="NGC7822.jpg" onclick="openLightbox('pictures/NGC7822.jpg')">
+                <p><div class="photoHeader"><a href=https://en.wikipedia.org/wiki/NGC_7822>NGC 7822</a></div> <div class="description">NGC 7822 is a young star forming complex in the constellation of Cepheus. The complex encompasses the emission region designated Sharpless 171, and the young cluster of stars named Berkeley 59. The complex is believed to be some 800–1000 pc distant, with the younger components aged no more than a few million years. The complex also includes one of the hottest stars discovered within 1 kpc of the Sun, namely BD+66 1673, which is an eclipsing binary system consisting of an O5V that exhibits a surface temperature of nearly 45,000 K and a luminosity about 100,000 times that of the Sun. The star is one of the primary sources illuminating the nebula and shaping the complex's famed pillars of creation-type formations, the elephant trunks. </div></p>
+            </div>
+        </section>
+    </main>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-image" src="" alt="High-resolution view">
+    </div>
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox-image').src = imageSrc;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+            document.getElementById('lightbox-image').src = '';
+        }
+    </script>
+</body>
+</html>
