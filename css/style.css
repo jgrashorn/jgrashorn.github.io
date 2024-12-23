@@ -90,6 +90,7 @@ body {
   font-weight: normal;
   width: 50%;
   margin: 20px 20px 0;
+  white-space: pre-line;
 }
 
 .footer {
