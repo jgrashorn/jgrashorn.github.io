@@ -50,6 +50,12 @@ body {
   width: auto;
 }
 
+.fa-namazu {
+  content: url("/img/hsu.svg");
+  height: 1em;
+  width: auto;
+}
+
 .irtg {
   color: var(--irtg-orange);
   font-weight: 600;
